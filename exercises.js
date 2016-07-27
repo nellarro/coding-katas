@@ -6,8 +6,8 @@
 
  **/
 
- let letters = ['a', 'b', 'c', 'd', 'e', 'j', 'n', 'l', 'l']
- let numbers = [1, 2, 3, 4, 5]
+ let letters = ['b', 'c', 'd', 'e']
+ let numbers = [2, 3, 4, 5]
 
  .sort(letters)
  console.log(letters)
@@ -22,18 +22,28 @@
  letters = letters.join()
  console.log(letters)
 
-// .pop()
+ console.log(numbers.pop('a'))
 
-// .push()
+ numbers.push(5)
+ console.log(numbers)
 
-// .slice()
+ console.log(numbers.slice(1, 2))
 
-// .splice()
+ console.log(numbers.splice(1, 2))
 
-// .shift()
+ console.log(numbers.shift())
 
-// .unshift()
+ console.log(numbers.unshift())
 
-// .filter()
+ function biggerThan (value) {
+   return value >= 28
+ }
+ let filtered = [82, 35, 12, 29.5, 7, 8].filter(biggerThan)
+ console.log(filtered)
 
+ let newNumbers = numbers.map(function (number) {
+   return newNumbers * 2
+ })
+
+ console.log(newNumbers)
 // .map()
